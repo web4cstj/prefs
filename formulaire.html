@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Préférences</title>
+	<style type="text/css">
+		body {
+			background-color: #FFFFCC;
+			color: #000000;
+			font-size: 16px;
+			font-family: Arial;
+			line-height: 2;
+		}
+	</style>
+</head>
+
+<body>
+	<form action="index.php">
+		<h1>Mettre à jour mes préférences</h1>
+		<table>
+			<tr>
+				<th><label for="backgroundColor">backgroundColor</label></th>
+				<td><input type="color" name="backgroundColor" id="backgroundColor" value="#FFFFCC"></td>
+			</tr>
+			<tr>
+				<th><label for="color">color</label></th>
+				<td><input type="color" name="color" id="color" value="#000000"></td>
+			</tr>
+			<tr>
+				<th><label for="fontSize">fontSize</label></th>
+				<td><input type="text" name="fontSize" id="fontSize" value="16px"></td>
+			</tr>
+			<tr>
+				<th><label for="fontFamily">fontFamily</label></th>
+				<td><input type="text" name="fontFamily" id="fontFamily" value="Arial" list="families"><datalist
+						id="families">
+						<option value="Papyrus"></option>
+						<option value="Isadora"></option>
+						<option value="Comic Sans MS"></option>
+						<option value="Courier"></option>
+						<option value="Verdana"></option>
+					</datalist></td>
+			</tr>
+			<tr>
+				<th><label for="lineHeight">lineHeight</label></th>
+				<td><input type="number" name="lineHeight" id="lineHeight" step=".1" value="2"></td>
+			</tr>
+			<tr>
+				<th colspan="2"><button type="submit">Mettre à jour</button></th>
+			</tr>
+		</table>
+	</form>
+</body>
+
+</html>
